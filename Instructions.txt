@@ -1,0 +1,40 @@
+
+<!--To send email when new company is created : run this command in terminal-->
+
+php artisan queue:work
+
+<!--To enable the Schedule Email follow this steps-->
+
+1. open notepad or any text editor then copy this code and save it to .cmd file
+
+@echo off
+
+echo   - = = =   Schedule Run Jobs == = = = -
+
+
+CD C: &&  CD \Users\Joey\Desktop\CRM && php artisan schedule:run
+
+timeout 60
+
+CD C: &&  CD \Users\Joey\Desktop && "Schedule.cmd"
+
+pause
+
+@cls
+
+
+
+2. This line of code specify the location of your laravel project < CD C: &&  CD \Users\Joey\Desktop\CRM && php artisan schedule:run >
+
+***REPLACE THIS => ( \Users\Joey\Desktop\CRM ) to the exact location of your laravel project***
+
+
+
+3 This line of code specify the location of this .cmd file < CD C: &&  CD \Users\Joey\Desktop && "Schedule.cmd" >
+
+***REPLACE THIS => ( \Users\Joey\Desktop ) to the exact location of your .cmd file***
+
+***REPLACE THIS => ( Schedule.cmd ) to the name of your .cmd file***
+
+4. php artisan queue:work
+   
