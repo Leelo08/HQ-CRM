@@ -27,7 +27,7 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.12.0",
         "admin-lte": "^3.0.1",
-        "moment": "^2.24.0",
+        "moment": "^2.29.2",
         "moment-timezone": "^0.5.27",
         "sweetalert2": "^9.5.3",
         "vform": "^1.0.1",
